@@ -1,0 +1,4 @@
+Modell;Accuracy
+Arvore_Decisao;0.9551
+MLP_Classification; 0.9619
+SVM_Classification;0.9473
