@@ -8,7 +8,7 @@ df = pd.read_csv('endereco do arquivo')
 
 # Identificar automaticamente as características e a classe
 features = list(df.columns[:-1])
-target = df.columns[-1]
+target = df.columns[-1] 
 
 # Separar os dados em características (X) e rótulos (y)
 X = df[features]
