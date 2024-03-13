@@ -26,16 +26,14 @@ print('Distribuição das classes após o SMOTE:', Counter(y_res))
 # Visualizando a distribuição das classes antes e depois do SMOTE
 plt.figure(figsize=(12, 5))
 
-plt.subplot(1, 2, 1)
-plt.scatter(X_train[y_train == 0][:, 0], X_train[y_train == 0][:, 1], label="Classe 0")
-plt.scatter(X_train[y_train == 1][:, 0], X_train[y_train == 1][:, 1], label="Classe 1")
-plt.title("Antes do SMOTE")
+plt.scatter(X_train[y_train == 0][:, 0], X_train[y_train == 0][:, 1], label="Diabéticos",s=30)
+plt.scatter(X_train[y_train == 1][:, 0], X_train[y_train == 1][:, 1], label="Não diabéticos",s=30)
+plt.title("Base de dados tradicional")
 plt.legend()
 
-plt.subplot(1, 2, 2)
-plt.scatter(X_res[y_res == 0][:, 0], X_res[y_res == 0][:, 1], label="Classe 0")
-plt.scatter(X_res[y_res == 1][:, 0], X_res[y_res == 1][:, 1], label="Classe 1")
-plt.title("Após o SMOTE")
+plt.scatter(X_res[y_res == 0][:, 0], X_res[y_res == 0][:, 1], label="Diabéticos",s=30)
+plt.scatter(X_res[y_res == 1][:, 0], X_res[y_res == 1][:, 1], label="Não diabéticos",s=30)
+plt.title("Base de dados processada pelo SMOTE")
 plt.legend()
 
 plt.show()
