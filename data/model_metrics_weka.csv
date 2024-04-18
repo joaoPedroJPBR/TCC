@@ -1,0 +1,6 @@
+Modell;Accuracy;Kappa
+Decision_Tree;0.9707;0.9410
+MLP_Classification; 0.9182;0.8359
+SVM_Classification;0.8984;0.7956
+DeepMLP;0.9422;0.8834
+LSTM;0.9251;0.8490
